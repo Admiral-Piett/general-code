@@ -19,7 +19,7 @@ def convertToString(value):
 
     return strValue
 
-
+# Count the columns in a dataframe - useful for indexing
 def columnCount(dataframe):
     headerList = dataframe.columns
     count = -1
@@ -28,6 +28,6 @@ def columnCount(dataframe):
         count = count + 1
         print str(v) + " - " + str(count)
 
-
+# Pretty prints JSON for you
 def jsonpp(js):
     print json.dumps(js, indent=4)
